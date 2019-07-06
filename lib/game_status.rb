@@ -38,11 +38,11 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) || draw?(board) || full?(board)
+  won?(board) || draw?(board) 
 end
 
 def winner(board)
-  if full?(board) || draw?(board) && !won?(board)
+  if (full?(board) || draw?(board)) && !won?(board)
     return nil
   elsif (board[won?(board)[0]] == "X")
     return "X"
