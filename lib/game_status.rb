@@ -46,7 +46,7 @@ def winner(board)
     return "X"
   elsif (board[won?(board)[0]] == "O")
     return "O"
-  else
+  elsif full?(board) || draw?(board) && !won?(board)
     nil
   end
 end
