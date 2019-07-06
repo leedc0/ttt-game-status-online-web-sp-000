@@ -22,8 +22,8 @@ def won?(board)
     elsif index.all? { |i| board[i] == "O"}  # iterate through each element of each WIN_COMBINATIONS array and return array's (#index) with #all? "O"
       return index  # return the 3 element array (#index) with "O" representing the winning combination
     end
-    false # return falsey/nil when 3 element array (#index) does not represent winning combination
   end
+    false # return falsey/nil when 3 element array (#index) does not represent winning combination
 end
 
 
