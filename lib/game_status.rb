@@ -15,6 +15,8 @@ WIN_COMBINATIONS = [
   [2,4,6]  # Right diagonal
 ]
 
+board = ["X", " ", " ", "O", "O", "O", "X", "X", " "]
+
 def won?(board)
   WIN_COMBINATIONS.each do | index |  # iterate over WIN_COMBINATIONS collection to return value #index array
     if index.all? { |i| board[i] == "X" }  # iterate through each element of each WIN_COMBINATIONS array and return array's (#index) with #all? "X"
