@@ -23,7 +23,7 @@ def won?(board)
       return index  # return the 3 element array (#index) with "O" representing the winning combination
     end
   end
-    false # return falsey/nil when 3 element array (#index) does not represent winning combination
+    nil # return falsey/nil when 3 element array (#index) does not represent winning combination
 end
 
 
